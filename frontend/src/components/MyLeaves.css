@@ -1,0 +1,144 @@
+.my-leaves-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .my-leaves-container h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .new-request-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .new-request-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
+  }
+  
+  .leaves-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .leaves-table th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  .leaves-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ecf0f1;
+  }
+  
+  .leaves-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .leaves-table tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Status colors */
+  .status-pending {
+    color: #e67e22;
+    font-weight: 500;
+  }
+  
+  .status-approved {
+    color: #27ae60;
+    font-weight: 500;
+  }
+  
+  .status-rejected {
+    color: #e74c3c;
+    font-weight: 500;
+  }
+  
+  /* Status background highlights for rows */
+  tr.status-pending {
+    border-left: 4px solid #e67e22;
+  }
+  
+  tr.status-approved {
+    border-left: 4px solid #27ae60;
+  }
+  
+  tr.status-rejected {
+    border-left: 4px solid #e74c3c;
+  }
+  
+  /* Empty state */
+  .my-leaves-container > p {
+    color: #7f8c8d;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  /* Loading and error states */
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    color: #7f8c8d;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    background-color: #fdecea;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 2rem auto;
+    max-width: 1000px;
+    text-align: center;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .my-leaves-container {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    
+    .my-leaves-container h2 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .leaves-table {
+      display: block;
+      overflow-x: auto;
+    }
+    
+    .leaves-table th,
+    .leaves-table td {
+      padding: 10px;
+    }
+  }

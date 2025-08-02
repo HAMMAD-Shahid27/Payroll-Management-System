@@ -1,0 +1,170 @@
+
+body {
+    background-color: #f0f8ff;
+  }
+  
+  .payroll-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  
+  .payroll-container h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 1rem;
+    display: inline-block;
+  }
+  
+  
+  .employee-info {
+    background-color: #e6f2ff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #3498db;
+  }
+  
+  .employee-info h2 {
+    color: #1a5276;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .employee-info p {
+    color: #2874a6; 
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+  }
+  
+  .employee-info .payment-date {
+    font-weight: 500;
+    color: #3498db;
+  }
+  
+
+  .preview-box {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .preview-box h3 {
+    color: #2c3e50;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #d6eaf8;
+    padding-bottom: 0.5rem;
+  }
+  
+  .preview-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #ecf0f1;
+  }
+  
+  .preview-row:last-child {
+    border-bottom: none;
+  }
+  
+  .preview-row span:first-child {
+    font-weight: 500;
+    color: #34495e;
+  }
+  
+  .preview-row span:last-child {
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .preview-row.total {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #3498db;
+  }
+  
+  .preview-row.total span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2980b9;
+  }
+  
+  
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+  
+  .submit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 2.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+  }
+  
+  .submit-btn:hover {
+    background-color: #2874a6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+  }
+  
+  .payroll-container h2 {
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .payroll-container p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #7f8c8d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .payroll-container {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    
+    .employee-info {
+      padding: 1rem;
+    }
+    
+    .employee-info h2 {
+      font-size: 1.5rem;
+    }
+    
+    .preview-box {
+      padding: 1rem;
+    }
+    
+    .preview-row {
+      flex-direction: column;
+    }
+    
+    .preview-row span:last-child {
+      margin-top: 0.3rem;
+    }
+  }

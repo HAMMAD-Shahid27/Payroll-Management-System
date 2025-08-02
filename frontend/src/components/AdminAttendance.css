@@ -1,0 +1,52 @@
+.admin-attendance-container {
+    max-width: 90%;
+    margin: 2rem auto;
+    background: #e6f0ff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .attendance-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .attendance-header h1 {
+    font-size: 1.8rem;
+    color: #003366;
+  }
+  
+  .attendance-header button {
+    padding: 0.5rem 1rem;
+    background: #0055cc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .attendance-table th,
+  .attendance-table td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .attendance-table th {
+    background-color: #003366;
+    color: white;
+  }
+  
+  .attendance-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

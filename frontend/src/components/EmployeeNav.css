@@ -1,0 +1,164 @@
+.nav-container {
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background: #2c3e50;
+  z-index: 100;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-nav {
+  flex: 1;
+  padding: 1.5rem 1rem;
+  overflow-y: auto;
+}
+
+.nav-header {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #3d5166;
+  margin-bottom: 1.5rem;
+}
+
+.nav-logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ecf0f1;
+}
+
+.employee-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.employee-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #bdc3c7;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  color: #ecf0f1;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+  background: #34495e;
+  transform: translateX(3px);
+}
+
+.nav-item.active {
+  background: #3498db;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(52, 152, 219, 0.3);
+}
+
+.nav-icon {
+  margin-right: 12px;
+  font-size: 1.1rem;
+}
+
+.nav-text {
+  font-size: 0.95rem;
+}
+
+.logout-container {
+  padding: 1rem;
+  border-top: 1px solid #3d5166;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #c0392b;
+}
+
+.logout-icon {
+  margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .nav-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .employee-nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    overflow-y: visible;
+  }
+
+  .nav-header {
+    display: none;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    gap: 0.3rem;
+    margin-right: auto;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .nav-icon {
+    margin-right: 0;
+    font-size: 1.3rem;
+  }
+
+  .logout-container {
+    padding: 0;
+    border-top: none;
+    margin-left: auto;
+  }
+
+  .logout-btn {
+    padding: 0.5rem 0.8rem;
+    width: auto;
+  }
+
+  .logout-text {
+    display: none;
+  }
+}

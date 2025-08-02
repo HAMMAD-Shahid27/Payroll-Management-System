@@ -1,0 +1,126 @@
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #4285f4, #34a853);
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+}
+
+.landing-box {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.landing-box h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    overflow: visible;
+    white-space: normal; /* Allow wrapping */
+    text-overflow: unset;
+}
+
+.landing-toggle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.toggle-btn {
+    flex: 1 1 45%;
+    padding: 1rem;
+    border: none;
+    background: #4285f4;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 120px;
+}
+
+.toggle-btn:hover {
+    background: #3367d6;
+    transform: translateY(-2px);
+}
+
+.toggle-btn:active {
+    transform: translateY(1px);
+}
+
+.toggle-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.3);
+}
+
+.toggle-btn:nth-child(2) {
+    background: #34a853;
+}
+
+.toggle-btn:nth-child(2):hover {
+    background: #0f9d58;
+}
+
+.landing-footer {
+    margin-top: 2rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.landing-footer p {
+    font-weight: bold;
+    color: #444;
+    margin: 0;
+}
+
+.landing-footer a {
+    color: #4285f4;
+    text-decoration: none;
+    font-weight: 1000;
+}
+
+.landing-footer a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .landing-box {
+        padding: 2rem;
+    }
+
+    .landing-box h2 {
+        font-size: 1.6rem;
+    }
+
+    .toggle-btn {
+        flex: 1 1 100%;
+        font-size: 1rem;
+    }
+}

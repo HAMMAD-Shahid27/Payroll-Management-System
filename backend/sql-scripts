@@ -1,0 +1,37 @@
+-- 1. Attendance Table
+CREATE TABLE attendance (
+    id SERIAL PRIMARY KEY,
+    employee_id INTEGER NOT NULL,
+    in_time TIMESTAMP NOT NULL,
+    out_time TIMESTAMP
+);
+
+-- 2. Employee Table
+CREATE TABLE employee (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    refresh_token TEXT
+);
+
+-- 3. Payroll Table
+CREATE TABLE payroll (
+    id SERIAL PRIMARY KEY,
+    employee_id INTEGER NOT NULL,
+    basic_salary DECIMAL(10, 2) NOT NULL,
+    bonus DECIMAL(10, 2) NOT NULL,
+    deductions DECIMAL(10, 2) NOT NULL,
+    tax_percent DECIMAL(5, 2) NOT NULL,
+    net_salary DECIMAL(10, 2) NOT NULL,
+    payment_date DATE NOT NULL
+);
+
+-- 4. Admin Table
+CREATE TABLE admin (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    refresh_token TEXT
+);

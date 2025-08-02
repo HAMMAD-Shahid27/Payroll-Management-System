@@ -1,0 +1,218 @@
+/* AdminLeaves.css - Updated with Approve/Reject colors */
+
+/* Main container styling */
+.admin-leaves-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Header section */
+.admin-leaves-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.admin-leaves-title {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Refresh button */
+.refresh-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.refresh-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(41, 128, 185, 0.3);
+}
+
+/* Table styling */
+.leaves-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+}
+
+.leaves-table th {
+  background-color: #3498db;
+  color: white;
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.leaves-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f3f5;
+  vertical-align: middle;
+}
+
+/* Status indicators */
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-pending {
+  background-color: #fff8e6;
+  color: #e67e22;
+}
+
+.status-approved {
+  background-color: #e8f8f0;
+  color: #27ae60;
+}
+
+.status-rejected {
+  background-color: #ffebee;
+  color: #e74c3c;
+}
+
+/* Action buttons */
+.action-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.approve-btn {
+  padding: 0.5rem 1rem;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  min-width: 80px;
+}
+
+.approve-btn:hover {
+  background-color: #219150;
+  transform: translateY(-2px);
+}
+
+.reject-btn {
+  padding: 0.5rem 1rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  min-width: 80px;
+}
+
+.reject-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Premium Empty State */
+.empty-state-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  margin: 2rem 0;
+  background: #f8fafc;
+  border-radius: 12px;
+  text-align: center;
+  min-height: 400px;
+  background-image: radial-gradient(circle at 50% 50%, #f0f4f8 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.empty-state-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+  color: #bdc3c7;
+}
+
+.empty-state-title {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.empty-state-message {
+  color: #7f8c8d;
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.empty-state-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.empty-state-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .admin-leaves-container {
+    padding: 1.5rem;
+  }
+
+  .leaves-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .empty-state-container {
+    padding: 3rem 1.5rem;
+    min-height: 300px;
+  }
+
+  .empty-state-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
